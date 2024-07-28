@@ -1,0 +1,22 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "Current Dexterity: ",
+        "color": "dark_green",
+        "italic": false
+      },
+      {
+        "score": {
+          "name": "@p",
+          "objective": "soulDex"
+        },
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_all"
+  }
+]

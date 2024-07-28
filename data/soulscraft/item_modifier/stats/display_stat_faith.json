@@ -1,0 +1,22 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "Current Faith: ",
+        "color": "gold",
+        "italic": false
+      },
+      {
+        "score": {
+          "name": "@p",
+          "objective": "soulFaith"
+        },
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_all"
+  }
+]

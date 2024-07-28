@@ -1,0 +1,22 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "Current Strength: ",
+        "color": "dark_red",
+        "italic": false
+      },
+      {
+        "score": {
+          "name": "@p",
+          "objective": "soulStr"
+        },
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_all"
+  }
+]

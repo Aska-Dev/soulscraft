@@ -1,0 +1,22 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "Souls needed: ",
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "score": {
+          "name": "@p",
+          "objective": "soulsLevelupCosts"
+        },
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_all"
+  }
+]

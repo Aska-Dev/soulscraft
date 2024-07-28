@@ -1,0 +1,22 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "Current Intelligence: ",
+        "color": "blue",
+        "italic": false
+      },
+      {
+        "score": {
+          "name": "@p",
+          "objective": "soulInt"
+        },
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_all"
+  }
+]
