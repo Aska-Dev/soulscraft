@@ -1,0 +1,1 @@
+execute at @s run playsound minecraft:entity.evoker.cast_spell master @a ~ ~ ~

@@ -23,3 +23,4 @@ item replace entity @s container.16 with saddle[custom_model_data=191007,custom_
 item replace entity @s container.10 with air
 item replace entity @s container.11 with air
 item replace entity @s container.12 with air
+function soulscraft:crafting/crafting_success
