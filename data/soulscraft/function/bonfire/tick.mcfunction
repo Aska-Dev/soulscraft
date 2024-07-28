@@ -7,7 +7,7 @@ execute as @e[type=chest_minecart,tag=bonfire,scores={bonfireGuiPage=1..}] at @s
 
 
 #Bonfire Crafting
-execute as @e[type=item,nbt={Item:{id:"minecraft:campfire"}}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:iron_sword"}},limit=1,distance=0..1] run function soulscraft:bonfire/bonfire_mechanics/crafting_bonfire
+execute as @e[type=item,nbt={Item:{id:"minecraft:campfire"}}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:iron_sword"}},limit=1,distance=0..0.2] run function soulscraft:bonfire/bonfire_mechanics/crafting_bonfire
 
 
 #Bonfire Breaking
