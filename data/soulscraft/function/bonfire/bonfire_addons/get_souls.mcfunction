@@ -1,3 +1,3 @@
-give @s sugar[item_name='"Soul of a Lost Undead"',lore=['{"color":"gray","italic":true,"text":"Soul of a lost Undead who has long ago gone Hollow"}','" "','{"color":"gray","italic":true,"text":"Souls are the source of all life"}','{"color":"gray","italic":true,"text":"and whether Undead, or even Hollow,"}','{"color":"gray","italic":true,"text":"one continues to seek them"}'],custom_model_data=191002,custom_data={small_soul:1b}] 1
+give @s sugar[item_name='"Soul of a Lost Undead"',lore=['{"color":"dark_purple","italic":false,"text":"Tier 1"}','{"color":"gray","italic":true,"text":"Soul of a lost Undead who has long ago gone Hollow"}'],custom_model_data=191002,custom_data={small_soul:1b}] 1
 scoreboard players remove @s souls 5
 execute if score @s souls matches 5.. run function soulscraft:bonfire/bonfire_addons/get_souls
