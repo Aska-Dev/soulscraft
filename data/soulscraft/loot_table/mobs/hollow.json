@@ -1,0 +1,49 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls":  {
+            "min": 0,
+            "max": 1
+          },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:sugar",
+            "functions": [
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "Tier 1",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "Soul of a lost Undead who has long ago gone Hollow",
+                    "color": "gray",
+                    "italic": true
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "target": "item_name",
+                "name": "Soul of a Lost Undead"
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_data": {"small_soul":true},
+                  "minecraft:custom_model_data": 191002
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
