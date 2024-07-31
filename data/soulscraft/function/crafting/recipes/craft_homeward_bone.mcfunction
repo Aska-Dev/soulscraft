@@ -1,6 +1,6 @@
-execute if items entity @s container.10 sugar[custom_data={soul_tier:1},count=4] run tag @s add sc.r.homeward_bone
-execute if items entity @s container.11 sugar[custom_data={soul_tier:1},count=4] run tag @s add sc.r.homeward_bone
-execute if items entity @s container.12 sugar[custom_data={soul_tier:1},count=4] run tag @s add sc.r.homeward_bone
+execute if items entity @s container.10 sugar[custom_data={soul_tier:"1"},count=4] run tag @s add sc.r.homeward_bone
+execute if items entity @s container.11 sugar[custom_data={soul_tier:"1"},count=4] run tag @s add sc.r.homeward_bone
+execute if items entity @s container.12 sugar[custom_data={soul_tier:"1"},count=4] run tag @s add sc.r.homeward_bone
 
 execute unless entity @s[tag=sc.r.homeward_bone] run return fail
 tag @s remove sc.r.homeward_bone
