@@ -39,6 +39,7 @@ scoreboard objectives add ravengerKill minecraft.killed:ravager
 ## Items#
 scoreboard objectives add soulsItemUse dummy
 scoreboard objectives add soulsItemCharging dummy
+scoreboard players set @a soulsItemCharging 0
 
 scoreboard objectives add lastUsedBonfire_UUID_0 dummy
 scoreboard objectives add lastUsedBonfire_UUID_1 dummy
