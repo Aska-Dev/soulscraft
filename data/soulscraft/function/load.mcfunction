@@ -4,13 +4,13 @@ tellraw @a {"text": "[SoulsCraft] SoulsCraft V0.3 loaded successfully!", "color"
 #--- Setup custom stats ---
 ##Playser stats
 scoreboard objectives add soulStr dummy
-execute as @a unless score @s soulStr matches 1.. run scoreboard players set @s soulStr 1
+execute as @a unless score @s soulStr matches 1.. run scoreboard players set @s soulStr 0
 scoreboard objectives add soulDex dummy
-execute as @a unless score @s soulDex matches 1.. run scoreboard players set @s soulDex 1
+execute as @a unless score @s soulDex matches 1.. run scoreboard players set @s soulDex 0
 scoreboard objectives add soulFaith dummy
-execute as @a unless score @s soulFaith matches 1.. run scoreboard players set @s soulFaith 1
+execute as @a unless score @s soulFaith matches 1.. run scoreboard players set @s soulFaith 0
 scoreboard objectives add soulInt dummy
-execute as @a unless score @s soulInt matches 1.. run scoreboard players set @s soulInt 1
+execute as @a unless score @s soulInt matches 1.. run scoreboard players set @s soulInt 0
 ##Bonfire
 scoreboard objectives add soulscraftGui dummy
 scoreboard objectives add bonfireGuiPage dummy
