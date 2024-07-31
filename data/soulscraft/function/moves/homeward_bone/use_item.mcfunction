@@ -5,7 +5,7 @@ execute at @s run playsound minecraft:block.bell.resonate master @a
 tag @s remove returningPlayer
 
 #Reset item use after usage
-function soulscraft:items/reset_item_uses
+function soulscraft:moves/reset_item_uses
 tag @s remove itemChargeDone
 
 #Clear item if one-time-use

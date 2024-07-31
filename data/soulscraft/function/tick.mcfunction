@@ -1,7 +1,7 @@
 function soulscraft:bonfire/tick
 function soulscraft:invasions/tick
 function soulscraft:souls/tick
-function soulscraft:items/tick
+function soulscraft:moves/tick
 function soulscraft:mobs/tick
 
 #--- Display not-visible chest-minecarts ---

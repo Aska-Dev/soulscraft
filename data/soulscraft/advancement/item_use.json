@@ -12,7 +12,7 @@
       }
     },
     "rewards": {
-      "function": "soulscraft:items/detect_item_use"
+      "function": "soulscraft:moves/detect_item_use"
     }
   }
   

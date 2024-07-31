@@ -9,7 +9,7 @@ execute as @e[distance=..5,tag=!sc.i.skull_lantern,type=player] run summon small
 tag @s remove sc.i.skull_lantern
 
 #Reset item use after usage
-function soulscraft:items/reset_item_uses
+function soulscraft:moves/reset_item_uses
 tag @s remove itemChargeDone
 
 #Clear item if one-time-use
