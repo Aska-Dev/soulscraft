@@ -1,0 +1,13 @@
+{
+    "placement": {
+        "type": "minecraft:random_spread",
+        "salt": 19011220,
+        "separation": 6,
+        "spacing": 16,
+        "spread_type": "triangular"
+    },
+    "structures": [{
+        "structure": "soulscraft:ruins",
+        "weight": 1
+    }]
+}
