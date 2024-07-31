@@ -1,5 +1,5 @@
 #--- Load messages ---
-tellraw @a {"text": "[SoulsCraft] SoulsCraft V0.3 loaded successfully!", "color": "red"}
+tellraw @a {"text": "[SoulsCraft] SoulsCraft V0.4 loaded successfully!", "color": "red"}
 
 #--- Setup custom stats ---
 ##Playser stats
