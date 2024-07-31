@@ -58,6 +58,7 @@
         "wither",
         "wolf",
         "zoglin",
-        "zombified_piglin"
+        "zombified_piglin",
+        "player"
     ]
   }
