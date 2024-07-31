@@ -1,0 +1,1 @@
+execute as @a[tag=!dev] at @s as @e[tag=sc.s.ruins,type=armor_stand,distance=..20] at @s run function soulscraft:mobs/spawners/ruins_spawner

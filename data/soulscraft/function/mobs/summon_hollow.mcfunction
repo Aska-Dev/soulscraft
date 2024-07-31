@@ -1,0 +1,1 @@
+summon husk ~ ~ ~ {DeathLootTable:"soulscraft:mobs/hollow",CustomName:'"Hollow"'}
