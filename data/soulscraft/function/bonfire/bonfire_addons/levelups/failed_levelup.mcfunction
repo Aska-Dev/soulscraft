@@ -1,0 +1,3 @@
+execute unless score @s soulsLevelupCosts <= @s soulsForLevelup run tellraw @s ["This power is beyond your reach..."]
+execute unless score @s soulsLevelupCosts <= @s soulsForLevelup run tellraw @s [{"color":"gray","italic":true,"text":"Please hold the souls you want to use in your mainhand."}]
+execute unless score @s soulsLevelupCosts <= @s soulsForLevelup run scoreboard players set @s soulsForLevelup 0

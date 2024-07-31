@@ -23,6 +23,8 @@ scoreboard objectives add soulsLevelupCosts dummy
 execute as @a unless score @s soulsLevelupCosts matches 4.. run scoreboard players set @s soulsLevelupCosts 4
 scoreboard objectives add soulsLevelupTier dummy
 execute as @a unless score @s soulsLevelupTier matches 1.. run scoreboard players set @s soulsLevelupTier 1
+scoreboard objectives add soulsForLevelup dummy
+execute as @a unless score @s soulsForLevelup matches 1.. run scoreboard players set @s soulsLevelupTier 1
 scoreboard objectives add souls dummy
 scoreboard objectives add humanity dummy
 
