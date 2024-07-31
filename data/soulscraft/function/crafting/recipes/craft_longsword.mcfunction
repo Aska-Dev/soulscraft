@@ -1,6 +1,6 @@
-execute if items entity @s container.10 sugar[custom_data={small_soul:1b},count=4] run tag @s add sc.r.longsword
-execute if items entity @s container.11 sugar[custom_data={small_soul:1b},count=4] run tag @s add sc.r.longsword
-execute if items entity @s container.12 sugar[custom_data={small_soul:1b},count=4] run tag @s add sc.r.longsword
+execute if items entity @s container.10 sugar[custom_data={soul_tier:1},count=4] run tag @s add sc.r.longsword
+execute if items entity @s container.11 sugar[custom_data={soul_tier:1},count=4] run tag @s add sc.r.longsword
+execute if items entity @s container.12 sugar[custom_data={soul_tier:1},count=4] run tag @s add sc.r.longsword
 
 execute unless entity @s[tag=sc.r.longsword] run return fail
 tag @s remove sc.r.longsword

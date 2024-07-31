@@ -36,7 +36,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:custom_data": {"small_soul":true},
+                  "minecraft:custom_data": {"soul_tier":1},
                   "minecraft:custom_model_data": 191002
                 }
               }

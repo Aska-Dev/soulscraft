@@ -3,19 +3,38 @@
     "function": "minecraft:set_lore",
     "entity": "this",
     "lore": [
-      {
-        "text": "Souls needed: ",
-        "color": "gray",
-        "italic": false
-      },
-      {
-        "score": {
-          "name": "@p",
-          "objective": "soulsLevelupCosts"
+      [
+        {
+          "text": "Soul Tier: ",
+          "color": "dark_purple",
+          "italic": false
         },
-        "color": "gray",
-        "italic": false
-      }
+        {
+          "score": {
+            "name": "@p",
+            "objective": "soulsLevelupTier"
+          },
+          "color": "light_purple",
+          "bold": true,
+          "italic": false
+        }
+      ],
+      [
+        {
+          "text": "Souls needed: ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "@p",
+            "objective": "soulsLevelupCosts"
+          },
+          "color": "white",
+          "bold": true,
+          "italic": false
+        }
+      ]
     ],
     "mode": "replace_all"
   }

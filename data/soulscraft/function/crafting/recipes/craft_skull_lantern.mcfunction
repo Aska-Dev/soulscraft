@@ -1,6 +1,6 @@
-execute if items entity @s container.10 sugar[custom_data={small_soul:1b},count=1] run tag @s add sc.r.skull_lantern
-execute if items entity @s container.11 sugar[custom_data={small_soul:1b},count=1] run tag @s add sc.r.skull_lantern
-execute if items entity @s container.12 sugar[custom_data={small_soul:1b},count=1] run tag @s add sc.r.skull_lantern
+execute if items entity @s container.10 sugar[custom_data={soul_tier:1},count=1] run tag @s add sc.r.skull_lantern
+execute if items entity @s container.11 sugar[custom_data={soul_tier:1},count=1] run tag @s add sc.r.skull_lantern
+execute if items entity @s container.12 sugar[custom_data={soul_tier:1},count=1] run tag @s add sc.r.skull_lantern
 
 execute unless entity @s[tag=sc.r.skull_lantern] run return fail
 tag @s remove sc.r.skull_lantern
