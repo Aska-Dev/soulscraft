@@ -41,4 +41,4 @@ execute if score @s soulsItemCharging matches 39.. run title @s actionbar [{"col
 execute if score @s soulsItemCharging matches 41.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||||||||||||||||||||"}]
 execute if score @s soulsItemCharging matches 42.. run tag @s add itemChargeDone
 execute if score @s soulsItemCharging matches 42.. run title @s actionbar ""
-execute if score @s soulsItemCharging matches 42.. run scoreboard players set @s soulsItemCharging -20
+execute if score @s soulsItemCharging matches 42.. run scoreboard players set @s soulsItemCharging -10
