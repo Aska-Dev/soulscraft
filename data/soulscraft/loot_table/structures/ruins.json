@@ -1,72 +1,102 @@
 {
-    "type": "minecraft:chest",
-    "pools": [
-      {
-        "rolls": 10,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:cobweb",
-            "weight": 2
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:moss_block",
-            "weight": 2
-          },
-          {
-            "type": "minecraft:group",
-            "children": [
-              {
-                "type": "minecraft:item",
-                "name": "minecraft:gold_ingot",
-                "weight": 2
-              },
-              {
-                "type": "minecraft:item",
-                "name": "minecraft:iron_ingot",
-                "weight": 3
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:sugar",
-            "weight": 1,
-            "functions": [
-              {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  {
-                    "text": "Tier 1",
-                    "color": "dark_purple",
-                    "italic": false
-                  },
-                  {
-                    "text": "Soul of a lost Undead who has long ago gone Hollow",
-                    "color": "gray",
-                    "italic": true
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 10,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cobweb",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:gold_ingot",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:iron_ingot",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:sugar",
+              "weight": 1,
+              "functions": [
+                {
+                  "function": "minecraft:set_lore",
+                  "lore": [
+                    {
+                      "text": "Tier 1",
+                      "color": "dark_purple",
+                      "italic": false
+                    },
+                    {
+                      "text": "Soul of a lost Undead who has long ago gone Hollow",
+                      "color": "gray",
+                      "italic": true
+                    }
+                  ],
+                  "mode": "replace_all"
+                },
+                {
+                  "function": "minecraft:set_name",
+                  "entity": "this",
+                  "target": "item_name",
+                  "name": "Soul of a Lost Undead"
+                },
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:custom_data": {"small_soul":true},
+                    "minecraft:custom_model_data": 191002
                   }
-                ],
-                "mode": "replace_all"
-              },
-              {
-                "function": "minecraft:set_name",
-                "entity": "this",
-                "target": "item_name",
-                "name": "Soul of a Lost Undead"
-              },
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:custom_data": {"small_soul":true},
-                  "minecraft:custom_model_data": 191002
                 }
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:sugar",
+              "weight": 1,
+              "functions": [
+                {
+                  "function": "minecraft:set_lore",
+                  "entity": "this",
+                  "lore": [
+                    {
+                      "text": "Rare tiny black sprite found on corpses.",
+                      "color": "gray"
+                    }
+                  ],
+                  "mode": "replace_all"
+                },
+                {
+                  "function": "minecraft:set_name",
+                  "entity": "this",
+                  "target": "item_name",
+                  "name": "Humanity"
+                },
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:custom_model_data": 191003,
+                    "minecraft:custom_data": {"humanity":true}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
