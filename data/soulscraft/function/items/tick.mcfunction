@@ -1,0 +1,1 @@
+function soulscraft:items/check_stats

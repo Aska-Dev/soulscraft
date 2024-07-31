@@ -1,3 +1,6 @@
+execute if entity @s[nbt={active_effects:[{id:"minecraft:mining_fatigue"}]}] run tag @s remove itemChargeDone
+execute if entity @s[nbt={active_effects:[{id:"minecraft:mining_fatigue"}]}] run return fail
+
 playsound minecraft:entity.player.attack.sweep
 effect give @s hunger 1 100 true
 tag @s add sc.use.heavy_attack

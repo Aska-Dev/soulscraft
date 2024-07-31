@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:entity_scores",
+  "entity": "this",
+  "scores": {
+    "soulStr": {
+      "min": 1
+    },
+    "soulDex": {
+      "min": 1
+    }
+  }
+}
