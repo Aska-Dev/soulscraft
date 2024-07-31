@@ -8,18 +8,18 @@ execute if score @s soulsItemCharging matches 4.. run title @s actionbar [{"colo
 execute if score @s soulsItemCharging matches 5.. run title @s actionbar [{"color":"red","text":"|||||||||||||"},{"color":"white","text":"|||||||||||||||||||||||||||"}]
 execute if score @s soulsItemCharging matches 5.. run title @s actionbar [{"color":"red","text":"||||||||||||||"},{"color":"white","text":"||||||||||||||||||||||||||"}]
 execute if score @s soulsItemCharging matches 6.. run title @s actionbar [{"color":"red","text":"||||||||||||||||"},{"color":"white","text":"||||||||||||||||||||||||"}]
-execute if score @s soulsItemCharging matches 7.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||"},{"color":"white","text":"||||||||||||||||||||||"}]
-execute if score @s soulsItemCharging matches 8.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||"},{"color":"white","text":"||||||||||||||||||||"}]
-execute if score @s soulsItemCharging matches 9.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||"},{"color":"white","text":"||||||||||||||||||"}]
-execute if score @s soulsItemCharging matches 10.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||||"},{"color":"white","text":"||||||||||||||||"}]
-execute if score @s soulsItemCharging matches 11.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||||||"},{"color":"white","text":"||||||||||||||"}]
-execute if score @s soulsItemCharging matches 12.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||||||||"},{"color":"white","text":"||||||||||||"}]
-execute if score @s soulsItemCharging matches 13.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||||||||||"},{"color":"white","text":"||||||||||"}]
-execute if score @s soulsItemCharging matches 14.. run title @s actionbar [{"color":"red","text":"|||||||||||||||||||||||||||||||||"},{"color":"white","text":"|||||||"}]
-execute if score @s soulsItemCharging matches 15.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||||||||||||||"},{"color":"white","text":"||||||"}]
-execute if score @s soulsItemCharging matches 16.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||||||||||||||||"},{"color":"white","text":"||||"}]
-execute if score @s soulsItemCharging matches 17.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||||||||||||||||||"},{"color":"white","text":"||"}]
-execute if score @s soulsItemCharging matches 18.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||||||||||||||||||||"}]
-execute if score @s soulsItemCharging matches 18.. run tag @s add itemChargeDone
-execute if score @s soulsItemCharging matches 18.. run title @s actionbar ""
-execute if score @s soulsItemCharging matches 18.. run scoreboard players set @s soulsItemCharging -10
+execute if score @s soulsItemCharging matches 6.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||"},{"color":"white","text":"||||||||||||||||||||||"}]
+execute if score @s soulsItemCharging matches 7.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||"},{"color":"white","text":"||||||||||||||||||||"}]
+execute if score @s soulsItemCharging matches 8.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||"},{"color":"white","text":"||||||||||||||||||"}]
+execute if score @s soulsItemCharging matches 9.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||||"},{"color":"white","text":"||||||||||||||||"}]
+execute if score @s soulsItemCharging matches 10.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||||||"},{"color":"white","text":"||||||||||||||"}]
+execute if score @s soulsItemCharging matches 11.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||||||||"},{"color":"white","text":"||||||||||||"}]
+execute if score @s soulsItemCharging matches 12.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||||||||||"},{"color":"white","text":"||||||||||"}]
+execute if score @s soulsItemCharging matches 13.. run title @s actionbar [{"color":"red","text":"|||||||||||||||||||||||||||||||||"},{"color":"white","text":"|||||||"}]
+execute if score @s soulsItemCharging matches 14.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||||||||||||||"},{"color":"white","text":"||||||"}]
+execute if score @s soulsItemCharging matches 15.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||||||||||||||||"},{"color":"white","text":"||||"}]
+execute if score @s soulsItemCharging matches 16.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||||||||||||||||||"},{"color":"white","text":"||"}]
+execute if score @s soulsItemCharging matches 17.. run title @s actionbar [{"color":"red","text":"||||||||||||||||||||||||||||||||||||||||"}]
+execute if score @s soulsItemCharging matches 17.. run tag @s add itemChargeDone
+execute if score @s soulsItemCharging matches 17.. run title @s actionbar ""
+execute if score @s soulsItemCharging matches 17.. run scoreboard players set @s soulsItemCharging -10
