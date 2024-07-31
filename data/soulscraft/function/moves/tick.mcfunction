@@ -13,8 +13,12 @@ execute as @a at @s if items entity @s weapon.mainhand saddle[minecraft:custom_d
 execute as @a[tag=itemChargeDone] at @s if items entity @s weapon.mainhand saddle[minecraft:custom_data={homeward_bone:true,medium_charge:true,souls_item:true}] run function soulscraft:moves/homeward_bone/use_item
 
 #Detec Skull lantern
-execute as @a at @s if items entity @s weapon.* saddle[minecraft:custom_data={skull_lantern:true,fast_charge:true,souls_item:true}] if score @s soulsItemCharging matches 1.. run function soulscraft:moves/skull_lantern/use_item_start
-execute as @a[tag=itemChargeDone] at @s if items entity @s weapon.* saddle[minecraft:custom_data={skull_lantern:true,fast_charge:true,souls_item:true}] run function soulscraft:moves/skull_lantern/use_item
+execute as @a at @s if items entity @s weapon.mainhand saddle[minecraft:custom_data={skull_lantern:true,fast_charge:true,souls_item:true}] if score @s soulsItemCharging matches 1.. run function soulscraft:moves/skull_lantern/use_item_start
+execute as @a[tag=itemChargeDone] at @s if items entity @s weapon.mainhand saddle[minecraft:custom_data={skull_lantern:true,fast_charge:true,souls_item:true}] run function soulscraft:moves/skull_lantern/use_item
+
+execute as @a at @s unless predicate soulscraft:mainhand_is_soul_item if items entity @s weapon.offhand saddle[minecraft:custom_data={skull_lantern:true,fast_charge:true,souls_item:true}] if score @s soulsItemCharging matches 1.. run function soulscraft:moves/skull_lantern/use_item_start
+execute as @a[tag=itemChargeDone] at @s unless predicate soulscraft:mainhand_is_soul_item if items entity @s weapon.offhand saddle[minecraft:custom_data={skull_lantern:true,fast_charge:true,souls_item:true}] run function soulscraft:moves/skull_lantern/use_item
 
 #Detect Weapon with Special Move: Heavy Attack
-#execute as @a if predicate soulscraft:weapon_moves/has_special_move_heavy_attack 
+execute as @a if predicate soulscraft:weapon_moves/has_special_move_heavy_attack if score @s soulsItemCharging matches 1.. run function soulscraft:moves/weapon_moves/heavy_attack/move_charging
+execute as @a[tag=itemChargeDone] if predicate soulscraft:weapon_moves/has_special_move_heavy_attack at @s run function soulscraft:moves/weapon_moves/heavy_attack/use_move
