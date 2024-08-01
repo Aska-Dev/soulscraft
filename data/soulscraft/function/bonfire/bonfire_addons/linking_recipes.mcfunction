@@ -1,3 +1,4 @@
 function soulscraft:crafting/recipes/craft_homeward_bone
 function soulscraft:crafting/recipes/craft_skull_lantern
 function soulscraft:crafting/recipes/craft_longsword
+function soulscraft:crafting/recipes/craft_t2_soul
