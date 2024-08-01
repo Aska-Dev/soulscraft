@@ -1,0 +1,13 @@
+{
+    "placement": {
+        "type": "minecraft:random_spread",
+        "salt": 19011220,
+        "separation": 12,
+        "spacing": 32,
+        "spread_type": "triangular"
+    },
+    "structures": [{
+        "structure": "soulscraft:lautrec_prison",
+        "weight": 1
+    }]
+}

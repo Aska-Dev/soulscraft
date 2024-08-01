@@ -1,0 +1,183 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:chicken_spawn_egg",
+            "functions": [
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": "Mystical orb found on a Keeper's corpse.",
+                    "color": "gray"
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "text": "Invade the world of the murderer of a Fire Keeper",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "to defeat the perpetrator",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "and reclaim the soul of the Fire Keeper.",
+                    "color": "gray"
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "target": "item_name",
+                "name": {
+                    "text": "Black Eye Orb",
+                    "color": "dark_gray"
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_model_data": 191006,
+                  "minecraft:entity_data": {
+                    "id": "minecraft:armor_stand",
+                    "Invulnerable": true,
+                    "Invisible": true,
+                    "Marker": true,
+                    "Tags": [
+                        "lautrecInvade",
+                        "invasion",
+                        "invasionSpawned"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 6,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_ingot",
+            "weight": 20
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_nugget",
+            "weight": 20
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:gold_ingot",
+            "weight": 20
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:gold_nugget",
+            "weight": 20
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_block",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:sugar",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": "Rare tiny black sprite found on corpses.",
+                    "color": "gray"
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "target": "item_name",
+                "name": "Humanity"
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_model_data": 191003,
+                  "minecraft:custom_data": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:enchanted_book",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "minecraft:enchant_randomly",
+                "options": [
+                  "minecraft:binding_curse",
+                  "minecraft:protection",
+                  "minecraft:sharpness",
+                  "minecraft:smite",
+                  "minecraft:sweeping_edge",
+                  "minecraft:vanishing_curse",
+                  "minecraft:fire_protection",
+                  "minecraft:knockback"
+                ],
+                "only_compatible": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:golden_helmet",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "target": "item_name",
+                "name": {
+                  "text": "Golden Crown"
+                }
+              },
+              {
+                "function": "minecraft:enchant_randomly",
+                "options": [
+                  "minecraft:fire_protection",
+                  "minecraft:blast_protection",
+                  "minecraft:projectile_protection",
+                  "minecraft:protection"
+                ]
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:binding_curse": 0,
+                  "minecraft:vanishing_curse": 0,
+                  "minecraft:unbreaking": 3
+                },
+                "add": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

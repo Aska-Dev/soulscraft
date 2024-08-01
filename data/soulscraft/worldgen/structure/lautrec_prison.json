@@ -1,0 +1,26 @@
+{
+    "biomes": [
+        "forest",
+        "windswept_hills",
+        "windswept_gravelly_hills",
+        "stony_peaks",
+        "frozen_peaks",
+        "windswept_forest",
+        "snowy_slopes",
+        "minecraft:savanna_plateau",
+        "plains",
+        "dark_forest"
+    ],
+    "spawn_overrides": {},
+    "type": "minecraft:jigsaw",
+    "start_pool": "soulscraft:lautrec_prison",
+    "size": 7,
+    "step": "vegetal_decoration",
+    "start_height": {
+        "absolute": 0
+    },
+    "project_start_to_heightmap": "WORLD_SURFACE_WG",
+    "max_distance_from_center": 116,
+    "terrain_adaptation": "beard_thin",
+    "use_expansion_hack": false
+}
