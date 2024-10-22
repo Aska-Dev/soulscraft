@@ -25,3 +25,6 @@ execute as @a[tag=itemChargeDone] if predicate soulscraft:weapon_moves/has_speci
 
 #Detect equipment
 execute as @a[tag=itemChargeDone] if predicate soulscraft:is_ring at @s run function soulscraft:moves/rings/equip_ring
+
+#Apply effects of rings
+function soulscraft:moves/rings/apply_ring_effects

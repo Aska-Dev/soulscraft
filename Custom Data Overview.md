@@ -11,5 +11,5 @@ The item can be used with right-click, the "casting time" is medium
 The unqiue identifier custom data with the unique item name to idenfity the item 
 ## sc.eq.ring:true
 The item is an equippable ring 
-## sc.equipped:true
-The item is at the moment equipped to a player
+## sc.equipped:{true or false}
+If true, the item is equipped by a player - default data tag for every item equippable via a custom way like f.e. rings
