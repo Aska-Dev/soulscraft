@@ -1,0 +1,16 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "[Item equipped]",
+        "color": "gold",
+        "italic": false
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 9,
+    "size": 1
+  }
+]
