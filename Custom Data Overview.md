@@ -1,3 +1,7 @@
+# Custom Player Data
+## sc.tag.silverLightfootRing_active
+If a player owns this tag, they recive the effect of the Silver Lightfoot Ring
+
 # Custom Item Data
 ## fast_charge:true
 The item can be used with right-click, the "casting time" is fast
