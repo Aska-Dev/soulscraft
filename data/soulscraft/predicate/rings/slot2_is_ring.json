@@ -3,7 +3,7 @@
     "entity": "this",
     "predicate": {
       "slots": {
-        "weapon.mainhand": {
+        "container.12": {
           "count": {
             "min": 1
           },

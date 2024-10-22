@@ -28,4 +28,22 @@ item replace entity @s container.24 with black_stained_glass_pane[hide_tooltip={
 item replace entity @s container.25 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
 item replace entity @s container.26 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
 
+item replace entity @s container.12 with air
+item replace entity @s container.14 with air
+item replace entity @s container.15 with air
+execute unless score @p sc.ring_slot.1 matches 1.. run item replace entity @s container.12 with white_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
+execute unless score @p sc.ring_slot.2 matches 1.. run item replace entity @s container.14 with white_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
+execute unless score @p sc.ring_slot.3 matches 1.. run item replace entity @s container.15 with white_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
+
+# Order rings if there is a missing slot
+execute if score @p sc.ring_slot.4 matches 1.. if score @p sc.ring_slot.3 matches 0 run function soulscraft:bonfire/bonfire_addons/rings/push_4_to_3
+execute if score @p sc.ring_slot.3 matches 1.. if score @p sc.ring_slot.2 matches 0 run function soulscraft:bonfire/bonfire_addons/rings/push_3_to_2
+execute if score @p sc.ring_slot.2 matches 1.. if score @p sc.ring_slot.1 matches 0 run function soulscraft:bonfire/bonfire_addons/rings/push_2_to_1
+
+# Place rings in the right slots
+execute if score @p sc.ring_slot.1 matches 1.. run function soulscraft:bonfire/bonfire_addons/rings/setup_ring_slots
+execute if score @p sc.ring_slot.2 matches 1.. run function soulscraft:bonfire/bonfire_addons/rings/setup_ring_slots
+execute if score @p sc.ring_slot.3 matches 1.. run function soulscraft:bonfire/bonfire_addons/rings/setup_ring_slots
+execute if score @p sc.ring_slot.4 matches 1.. run function soulscraft:bonfire/bonfire_addons/rings/setup_ring_slots
+
 item replace entity @s container.0 with sugar[item_name='{"bold":true,"color":"white","text":"Go back"}',custom_data={IsGuiItem:1},custom_model_data=192006,hide_additional_tooltip={}]

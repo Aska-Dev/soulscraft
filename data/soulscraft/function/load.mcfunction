@@ -11,6 +11,7 @@ scoreboard objectives add soulFaith dummy
 execute as @a unless score @s soulFaith matches 1.. run scoreboard players set @s soulFaith 0
 scoreboard objectives add soulInt dummy
 execute as @a unless score @s soulInt matches 1.. run scoreboard players set @s soulInt 0
+
 scoreboard objectives add sc.ring_slot.1 dummy
 execute as @a unless score @s sc.ring_slot.1 matches 0.. run scoreboard players set @s sc.ring_slot.1 0
 scoreboard objectives add sc.ring_slot.2 dummy
@@ -19,6 +20,9 @@ scoreboard objectives add sc.ring_slot.3 dummy
 execute as @a unless score @s sc.ring_slot.3 matches 0.. run scoreboard players set @s sc.ring_slot.3 0
 scoreboard objectives add sc.ring_slot.4 dummy
 execute as @a unless score @s sc.ring_slot.4 matches 0.. run scoreboard players set @s sc.ring_slot.4 0
+
+scoreboard objectives add sc.temp dummy
+execute as @a unless score @s sc.temp matches -2147483648..2147483647 run scoreboard players set @s sc.temp 0
 ##Bonfire
 scoreboard objectives add soulscraftGui dummy
 scoreboard objectives add bonfireGuiPage dummy

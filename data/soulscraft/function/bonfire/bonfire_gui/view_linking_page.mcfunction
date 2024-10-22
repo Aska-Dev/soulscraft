@@ -9,7 +9,7 @@ execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 
 scoreboard players reset @s soulscraftGui
 
 #--- Check for filler item ---
-execute store result score @s soulscraftGui run data get entity @s Items[26].Slot
+execute store result score @s soulscraftGui run data get entity @s Items[22].Slot
 execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 26 run clear @p sugar[minecraft:custom_data={IsGuiItem:1}]
 execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 26 run clear @p black_stained_glass_pane[minecraft:custom_data={IsGuiItem:1}]
 execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 26 run tag @s add soulscraftUsed

@@ -1,0 +1,19 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "slots": {
+        "container.11": {
+          "count": {
+            "min": 1
+          },
+          "predicates": {
+            "minecraft:custom_data": {
+                "sc.eq.ring":true
+            }
+          }
+        }
+      }
+    }
+  }
+  
