@@ -3,13 +3,13 @@
     "entity": "this",
     "predicate": {
       "slots": {
-        "weapon.mainhand": {
+        "container.12": {
           "count": {
             "min": 1
           },
           "predicates": {
             "minecraft:custom_data": {
-                "souls_item":true
+                "sc.eq.ring":true
             }
           }
         }

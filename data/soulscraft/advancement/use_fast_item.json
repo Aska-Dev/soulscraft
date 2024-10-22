@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "predicates": {
+              "minecraft:custom_data": {"sc.fast_charge":true}
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "soulscraft:moves/detect_item_use"
+    }
+  }
+  

@@ -1,0 +1,17 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+    ],
+    "mode": "replace_section",
+    "offset": 9,
+    "size": 1
+  },
+  {
+    "function": "set_custom_data",
+    "tag": {
+      "sc.equipped":false
+    }
+  }
+]
