@@ -1,0 +1,19 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "slots": {
+        "weapon.mainhand": {
+          "count": {
+            "min": 1
+          },
+          "predicates": {
+            "minecraft:custom_data": {
+                "sc.equipped": true
+            }
+          }
+        }
+      }
+    }
+  }
+  
