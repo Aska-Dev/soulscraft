@@ -9,4 +9,4 @@ function soulscraft:moves/reset_item_uses
 tag @s remove itemChargeDone
 
 #Clear item if one-time-use
-clear @s saddle[custom_data={homeward_bone:true,medium_charge:true}] 1
+clear @s saddle[custom_data={homeward_bone:true,sc.medium_charge:true}] 1

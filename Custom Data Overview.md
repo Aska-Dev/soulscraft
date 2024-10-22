@@ -3,9 +3,9 @@
 If a player owns this tag, they recive the effect of the Silver Lightfoot Ring
 
 # Custom Item Data
-## fast_charge:true
+## sc.fast_charge:true
 The item can be used with right-click, the "casting time" is fast
-## medium_charge:true
+## sc.medium_charge:true
 The item can be used with right-click, the "casting time" is medium
 ## sc.item.{item name}
 The unqiue identifier custom data with the unique item name to idenfity the item 
