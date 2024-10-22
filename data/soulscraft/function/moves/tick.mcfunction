@@ -16,7 +16,7 @@ execute as @a[tag=itemChargeDone] at @s if items entity @s weapon.mainhand saddl
 execute as @a at @s if items entity @s weapon.mainhand saddle[minecraft:custom_data={skull_lantern:true,fast_charge:true,souls_item:true}] if score @s soulsItemCharging matches 1.. run function soulscraft:moves/skull_lantern/use_item_start
 execute as @a[tag=itemChargeDone] at @s if items entity @s weapon.mainhand saddle[minecraft:custom_data={skull_lantern:true,fast_charge:true,souls_item:true}] run function soulscraft:moves/skull_lantern/use_item
 
-execute as @a at @s unless predicate soulscraft:mainhand_is_soul_item if items entity @s weapon.offhand saddle[minecraft:custom_data={skull_lantern:true,fast_charge:true,souls_item:true}] if score @s soulsItemCharging matches 1.. run function soulscraft:moves/skull_lantern/use_item_start
+execute as @a at @s unless predicate soulscraft:has_charge_speed_fast unless predicate soulscraft:has_charge_speed_medium if items entity @s weapon.offhand saddle[minecraft:custom_data={skull_lantern:true,fast_charge:true,souls_item:true}] if score @s soulsItemCharging matches 1.. run function soulscraft:moves/skull_lantern/use_item_start
 execute as @a[tag=itemChargeDone] at @s unless predicate soulscraft:mainhand_is_soul_item if items entity @s weapon.offhand saddle[minecraft:custom_data={skull_lantern:true,fast_charge:true,souls_item:true}] run function soulscraft:moves/skull_lantern/use_item
 
 #Detect Weapon with Special Move: Heavy Attack
