@@ -3,7 +3,8 @@ execute at @a as @e[type=chest_minecart,distance=..50,tag=bonfire,scores={bonfir
 execute at @a as @e[type=chest_minecart,distance=..50,tag=bonfire,scores={bonfireGuiPage=1}] at @s run function soulscraft:bonfire/bonfire_gui/view_levelup_page
 execute at @a as @e[type=chest_minecart,distance=..50,tag=bonfire,scores={bonfireGuiPage=2}] at @s run function soulscraft:bonfire/bonfire_gui/view_linking_page
 # Reset Page
-execute at @a as @e[tag=bonfire,type=chest_minecart,scores={bonfireGuiPage=1..},distance=..50] unless entity @a[sort=nearest,limit=1,distance=..4] run scoreboard players set @s bonfireGuiPage 0
+execute at @a as @e[tag=bonfire,type=chest_minecart,scores={bonfireGuiPage=1..},distance=..50] at @s as @p[distance=4..] as @e[tag=bonfire,limit=1,sort=nearest] run scoreboard players set @s bonfireGuiPage 0
+
 
 #Bonfire Crafting
 execute at @a as @e[type=item,nbt={Item:{id:"minecraft:campfire"}},distance=..5] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:iron_sword"}},limit=1,distance=0..0.2] run function soulscraft:bonfire/bonfire_mechanics/crafting_bonfire
