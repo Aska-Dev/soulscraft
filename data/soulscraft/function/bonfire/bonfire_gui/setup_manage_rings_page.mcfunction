@@ -11,11 +11,9 @@ item replace entity @s container.7 with black_stained_glass_pane[hide_tooltip={}
 item replace entity @s container.8 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
 item replace entity @s container.9 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
 item replace entity @s container.10 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
-#item replace entity @s container.11 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
-#item replace entity @s container.12 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
+
 item replace entity @s container.13 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
-#item replace entity @s container.14 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
-#item replace entity @s container.15 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
+
 item replace entity @s container.16 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
 item replace entity @s container.17 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
 item replace entity @s container.18 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]

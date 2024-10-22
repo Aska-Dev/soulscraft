@@ -7,14 +7,14 @@ tag @s remove sc.r.silver_lightfoot_ring
 
 execute if items entity @s container.10 feather run tag @s add sc.r.silver_lightfoot_ring
 execute if items entity @s container.11 feather run tag @s add sc.r.silver_lightfoot_ring
-execute if items entity @s container.12 feather run tag @s add ssc.r.silver_lightfoot_ring
+execute if items entity @s container.12 feather run tag @s add sc.r.silver_lightfoot_ring
 
 execute unless entity @s[tag=sc.r.silver_lightfoot_ring] run return fail
 tag @s remove sc.r.silver_lightfoot_ring
 
 execute if items entity @s container.10 rabbit_foot run tag @s add sc.r.silver_lightfoot_ring
 execute if items entity @s container.11 rabbit_foot run tag @s add sc.r.silver_lightfoot_ring
-execute if items entity @s container.12 rabbit_foot run tag @s add ssc.r.silver_lightfoot_ring
+execute if items entity @s container.12 rabbit_foot run tag @s add sc.r.silver_lightfoot_ring
 
 execute unless entity @s[tag=sc.r.silver_lightfoot_ring] run return fail
 tag @s remove sc.r.silver_lightfoot_ring
