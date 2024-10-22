@@ -5,7 +5,7 @@
         "conditions": {
           "item": {
             "predicates": {
-              "minecraft:custom_data": {"souls_item":true}
+              "minecraft:custom_data": {"sc.medium_charge":true}
             }
           }
         }
