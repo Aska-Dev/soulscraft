@@ -22,9 +22,3 @@ execute as @a[tag=itemChargeDone] at @s unless predicate soulscraft:has_charge_s
 #Detect Weapon with Special Move: Heavy Attack
 execute as @a if predicate soulscraft:weapon_moves/has_special_move_heavy_attack if score @s soulsItemCharging matches 1.. run function soulscraft:moves/weapon_moves/heavy_attack/move_charging
 execute as @a[tag=itemChargeDone] if predicate soulscraft:weapon_moves/has_special_move_heavy_attack at @s run function soulscraft:moves/weapon_moves/heavy_attack/use_move
-
-#Detect equipment
-execute as @a[tag=itemChargeDone] if predicate soulscraft:is_ring at @s run function soulscraft:moves/rings/equip_ring
-
-#Apply effects of rings
-function soulscraft:moves/rings/apply_ring_effects
