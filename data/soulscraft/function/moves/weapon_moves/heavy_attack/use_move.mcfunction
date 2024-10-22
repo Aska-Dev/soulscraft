@@ -11,4 +11,4 @@ tag @s remove sc.use.heavy_attack
 
 #Reset item use after usage
 function soulscraft:moves/reset_item_uses
-tag @s remove itemChargeDone
+tag @s remove itemChargeDone 
