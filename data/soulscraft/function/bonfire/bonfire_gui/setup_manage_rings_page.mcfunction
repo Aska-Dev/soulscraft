@@ -1,9 +1,9 @@
-data merge entity @s {Items:[{}]}
+execute unless score @s bonfireGuiPage matches 3 run data merge entity @s {Items:[{}]}
 
 item replace entity @s container.0 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
 item replace entity @s container.1 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
 item replace entity @s container.2 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
-#item replace entity @s container.3 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
+item replace entity @s container.3 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
 item replace entity @s container.4 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
 item replace entity @s container.5 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
 item replace entity @s container.6 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
@@ -11,8 +11,11 @@ item replace entity @s container.7 with black_stained_glass_pane[hide_tooltip={}
 item replace entity @s container.8 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
 item replace entity @s container.9 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
 item replace entity @s container.10 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
-item replace entity @s container.12 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
-item replace entity @s container.14 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
+#item replace entity @s container.11 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
+#item replace entity @s container.12 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
+item replace entity @s container.13 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
+#item replace entity @s container.14 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
+#item replace entity @s container.15 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
 item replace entity @s container.16 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
 item replace entity @s container.17 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
 item replace entity @s container.18 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
@@ -25,8 +28,4 @@ item replace entity @s container.24 with black_stained_glass_pane[hide_tooltip={
 item replace entity @s container.25 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
 item replace entity @s container.26 with black_stained_glass_pane[hide_tooltip={},hide_additional_tooltip={},custom_data={IsGuiItem:1}]
 
-item replace entity @s container.3 with sugar[item_name='{"bold":true,"color":"white","text": "Manage Rings"}',custom_data={IsGuiItem:1},hide_additional_tooltip={},custom_model_data=192011]
-item replace entity @s container.11 with sugar[item_name='{"bold":true,"color":"white","text":"Rest"}',custom_data={IsGuiItem:1},custom_model_data=192005,hide_additional_tooltip={}]
-execute if entity @s[tag=!firekeeper] run item replace entity @s container.13 with sugar[item_name='{"bold":true,"color":"white","text":"???"}',custom_data={IsGuiItem:1},custom_model_data=192008,hide_additional_tooltip={}]
-execute if entity @s[tag=firekeeper] run item replace entity @s container.13 with sugar[item_name='{"bold":true,"color":"white","text":"Level Up"}',custom_data={IsGuiItem:1},custom_model_data=192007,hide_additional_tooltip={}]
-item replace entity @s container.15 with sugar[item_name='{"bold":true,"color":"white","text":"Linking"}',custom_data={IsGuiItem:1},custom_model_data=192009,hide_additional_tooltip={}]
+item replace entity @s container.0 with sugar[item_name='{"bold":true,"color":"white","text":"Go back"}',custom_data={IsGuiItem:1},custom_model_data=192006,hide_additional_tooltip={}]

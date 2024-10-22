@@ -2,8 +2,9 @@
 execute at @a as @e[type=chest_minecart,distance=..50,tag=bonfire,scores={bonfireGuiPage=0}] at @s run function soulscraft:bonfire/bonfire_gui/view_main_page
 execute at @a as @e[type=chest_minecart,distance=..50,tag=bonfire,scores={bonfireGuiPage=1}] at @s run function soulscraft:bonfire/bonfire_gui/view_levelup_page
 execute at @a as @e[type=chest_minecart,distance=..50,tag=bonfire,scores={bonfireGuiPage=2}] at @s run function soulscraft:bonfire/bonfire_gui/view_linking_page
+execute at @a as @e[type=chest_minecart,distance=..50,tag=bonfire,scores={bonfireGuiPage=3}] at @s run function soulscraft:bonfire/bonfire_gui/view_manage_rings
 # Reset Page
-execute at @a as @e[tag=bonfire,type=chest_minecart,scores={bonfireGuiPage=1..},distance=..50] at @s as @p[distance=4..] as @e[tag=bonfire,limit=1,sort=nearest] run scoreboard players set @s bonfireGuiPage 0
+execute at @a as @e[tag=bonfire,type=chest_minecart,scores={bonfireGuiPage=1..},distance=..50] at @s as @p[distance=4..] as @e[tag=bonfire,limit=1,sort=nearest] run function soulscraft:bonfire/bonfire_gui/reset_bonfire_gui_page
 
 
 #Bonfire Crafting

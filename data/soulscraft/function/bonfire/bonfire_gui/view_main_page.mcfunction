@@ -1,6 +1,27 @@
 tag @s remove soulscraftUsed
 
 #--- Check for filler item ---
+execute store result score @s soulscraftGui run data get entity @s Items[2].Slot
+execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 2 run clear @p black_stained_glass_pane[minecraft:custom_data={IsGuiItem:1}]
+execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 2 run tag @s add soulscraftUsed
+scoreboard players reset @s soulscraftGui
+
+# item on slot 3 || Manage Rings
+execute store result score @s soulscraftGui run data get entity @s Items[3].Slot
+execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 3 run clear @p sugar[custom_data={IsGuiItem:1}]
+execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 3 run function soulscraft:bonfire/bonfire_gui/setup_manage_rings_page
+execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 3 run scoreboard players set @s bonfireGuiPage 3
+execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 3 run tag @s add soulscraftUsed
+scoreboard players reset @s soulscraftGui
+
+#--- Check for filler item ---
+execute store result score @s soulscraftGui run data get entity @s Items[4].Slot
+execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 4 run clear @p black_stained_glass_pane[minecraft:custom_data={IsGuiItem:1}]
+execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 4 run tag @s add soulscraftUsed
+scoreboard players reset @s soulscraftGui
+
+
+#--- Check for filler item ---
 execute store result score @s soulscraftGui run data get entity @s Items[10].Slot
 execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 10 run clear @p black_stained_glass_pane[minecraft:custom_data={IsGuiItem:1}]
 execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 10 run tag @s add soulscraftUsed
