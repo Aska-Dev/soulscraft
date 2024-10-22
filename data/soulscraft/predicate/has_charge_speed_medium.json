@@ -9,7 +9,7 @@
           },
           "predicates": {
             "minecraft:custom_data": {
-                "medium_charge":true
+                "sc.medium_charge":true
             }
           }
         }
