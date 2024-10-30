@@ -30,3 +30,6 @@ item replace entity @s container.11 with sugar[item_name='{"bold":true,"color":"
 execute if entity @s[tag=!firekeeper] run item replace entity @s container.13 with sugar[item_name='{"bold":true,"color":"white","text":"???"}',custom_data={IsGuiItem:1},custom_model_data=192008,hide_additional_tooltip={}]
 execute if entity @s[tag=firekeeper] run item replace entity @s container.13 with sugar[item_name='{"bold":true,"color":"white","text":"Level Up"}',custom_data={IsGuiItem:1},custom_model_data=192007,hide_additional_tooltip={}]
 item replace entity @s container.15 with sugar[item_name='{"bold":true,"color":"white","text":"Linking"}',custom_data={IsGuiItem:1},custom_model_data=192009,hide_additional_tooltip={}]
+
+# Set Current Bonfire User
+function soulscraft:bonfire/bonfire_mechanics/set_bonfire_user
