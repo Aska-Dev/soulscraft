@@ -1,2 +1,2 @@
-execute if score @s soulsLevelupTier matches 1 if items entity @s weapon.mainhand sugar[custom_data={soul_tier:"1"}] store result score @s soulsForLevelup run data get entity Aska2708 SelectedItem.count
-execute if score @s soulsLevelupTier matches 2 if items entity @s weapon.mainhand sugar[custom_data={soul_tier:"2"}] store result score @s soulsForLevelup run data get entity Aska2708 SelectedItem.count
+execute if score @s soulsLevelupTier matches 1 if items entity @s weapon.mainhand sugar[custom_data={soul_tier:"1"}] store result score @s soulsForLevelup run data get entity @s SelectedItem.count
+execute if score @s soulsLevelupTier matches 2 if items entity @s weapon.mainhand sugar[custom_data={soul_tier:"2"}] store result score @s soulsForLevelup run data get entity @s SelectedItem.count
