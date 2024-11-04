@@ -51,6 +51,8 @@ scoreboard objectives add elderGuardianKill minecraft.killed:elder_guardian
 scoreboard objectives add wardenKill minecraft.killed:warden
 scoreboard objectives add ravengerKill minecraft.killed:ravager
 ## Items
+scoreboard objectives add soulsItemTimer dummy
+scoreboard players set @a soulsItemTimer -1
 scoreboard objectives add soulsItemUse dummy
 scoreboard objectives add soulsItemCharging dummy
 scoreboard players set @a soulsItemCharging 0
@@ -64,6 +66,10 @@ scoreboard objectives add entity_uuid_0 dummy
 scoreboard objectives add entity_uuid_1 dummy
 scoreboard objectives add entity_uuid_2 dummy
 scoreboard objectives add entity_uuid_3 dummy
+
+## Debug
+scoreboard objectives add sc.debug.active dummy
+scoreboard players set sc.debug sc.debug.active 0
 
 
 #--- Add Teams ---

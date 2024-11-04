@@ -8,6 +8,7 @@ execute as @a if score @s soulsItemUse matches 1.. run scoreboard players set @s
 
 execute as @a if score @s soulsItemCharging matches ..-1 run scoreboard players add @s soulsItemCharging 1
 
+
 #Detect Homeward Bone use
 execute as @a at @s if items entity @s weapon.mainhand saddle[minecraft:custom_data={homeward_bone:true,sc.medium_charge:true}] if score @s soulsItemCharging matches 1.. run function soulscraft:moves/homeward_bone/use_item_start
 execute as @a[tag=itemChargeDone] at @s if items entity @s weapon.mainhand saddle[minecraft:custom_data={homeward_bone:true,sc.medium_charge:true}] run function soulscraft:moves/homeward_bone/use_item
@@ -22,3 +23,6 @@ execute as @a[tag=itemChargeDone] at @s unless predicate soulscraft:has_charge_s
 #Detect Weapon with Special Move: Heavy Attack
 execute as @a if predicate soulscraft:weapon_moves/has_special_move_heavy_attack if score @s soulsItemCharging matches 1.. run function soulscraft:moves/weapon_moves/heavy_attack/move_charging
 execute as @a[tag=itemChargeDone] if predicate soulscraft:weapon_moves/has_special_move_heavy_attack at @s run function soulscraft:moves/weapon_moves/heavy_attack/use_move
+
+#Detect Weapon with Special Move: Multi Attack
+execute as @a if score @s soulsItemTimer matches 0.. run function soulscraft:moves/weapon_moves/multi_attack/await_move
