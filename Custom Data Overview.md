@@ -26,3 +26,4 @@ A **0** in a slot means that slot is empty
 | ID | Ring Name
 | - | -
 | 1 | Silver Lightfoot Ring
+| 2 | Silver Bearclaw Ring
