@@ -1,6 +1,8 @@
 # Custom Player Data
 ## sc.bonfire_user
 Tagged player is currently using or was shortly using a bonfire close to him
+## sc.skyward_strike.prepared
+Tagged player has the weapon move skyward strike prepared and can use it
 
 # Custom Item Data
 ## sc.fast_charge:true

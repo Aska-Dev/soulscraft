@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "predicates": {
+              "minecraft:custom_data": {"sc.skyward_strike":true}
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "soulscraft:moves/weapon_moves/skyward_strike/use_move"
+    }
+  }
+  

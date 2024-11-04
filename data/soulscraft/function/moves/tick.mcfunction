@@ -26,3 +26,7 @@ execute as @a[tag=itemChargeDone] if predicate soulscraft:weapon_moves/has_speci
 
 #Detect Weapon with Special Move: Multi Attack
 execute as @a if score @s soulsItemTimer matches 0.. run function soulscraft:moves/weapon_moves/multi_attack/await_move
+
+#Detect Weapon with Special Move: Skyward Strike
+execute as @a[tag=sc.skyward_strike.prepared] if score @s soulsItemTimer matches 1.. run scoreboard players remove @s soulsItemTimer 1
+execute as @a[tag=sc.skyward_strike.prepared] if score @s soulsItemTimer matches 0 run function soulscraft:moves/weapon_moves/skyward_strike/reset_move_setup
