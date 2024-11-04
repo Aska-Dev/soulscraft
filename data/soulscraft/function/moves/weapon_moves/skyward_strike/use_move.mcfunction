@@ -1,5 +1,5 @@
-execute if entity @s[nbt={active_effects:[{id:"minecraft:mining_fatigue"}]}] run tag @s remove sc.skyward_strike.prepared
-execute if entity @s[nbt={active_effects:[{id:"minecraft:mining_fatigue"}]}] run scoreboard players set @s soulsItemTimer -1
+execute if entity @s[nbt={active_effects:[{id:"minecraft:mining_fatigue"}]}] run advancement revoke @s only soulscraft:combos/skyward_strike/use_skyward_strike
+execute if entity @s[nbt={active_effects:[{id:"minecraft:mining_fatigue"}]}] run function soulscraft:moves/weapon_moves/skyward_strike/reset_move_setup
 execute if entity @s[nbt={active_effects:[{id:"minecraft:mining_fatigue"}]}] run return fail
 
 execute unless entity @s[tag=sc.skyward_strike.prepared] run advancement revoke @s only soulscraft:combos/skyward_strike/use_skyward_strike
