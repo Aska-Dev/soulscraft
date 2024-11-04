@@ -7,3 +7,7 @@ function soulscraft:items/tick
 
 #--- Display not-visible chest-minecarts ---
 execute at @a as @e[type=#minecarts,tag=!invisible_minecart,distance=..100] run function soulscraft:invisible_minecarts
+
+
+# Debug
+#execute as @a[tag=sc.bonfire_user] run say I am using a bonfire 

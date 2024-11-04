@@ -1,0 +1,1 @@
+execute at @s as @p[distance=..4] unless entity @a[distance=..4,tag=sc.bonfire_user] run tag @s add sc.bonfire_user

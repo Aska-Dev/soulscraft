@@ -31,7 +31,7 @@ scoreboard players reset @s soulscraftGui
 # item 1 on slot 10 || Strength
 execute store result score @s soulscraftGui run data get entity @s Items[10].Slot
 execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 10 run clear @p sugar[custom_data={IsGuiItem:1}]
-execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 10 run execute as @p run function soulscraft:bonfire/bonfire_addons/levelups/levelup_str
+execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 10 run execute as @p[tag=sc.bonfire_user] run function soulscraft:bonfire/bonfire_addons/levelups/levelup_str
 execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 10 run tag @s add soulscraftUsed
 scoreboard players reset @s soulscraftGui
 
@@ -44,7 +44,7 @@ scoreboard players reset @s soulscraftGui
 # item 2 on slot 12 || Dexterity
 execute store result score @s soulscraftGui run data get entity @s Items[12].Slot
 execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 12 run clear @p sugar[custom_data={IsGuiItem:1}]
-execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 12 run execute as @p run function soulscraft:bonfire/bonfire_addons/levelups/levelup_dex
+execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 12 run execute as @p[tag=sc.bonfire_user] run function soulscraft:bonfire/bonfire_addons/levelups/levelup_dex
 execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 12 run tag @s add soulscraftUsed
 scoreboard players reset @s soulscraftGui
 
@@ -57,7 +57,7 @@ scoreboard players reset @s soulscraftGui
 # item 3 on slot 14 || Faith
 execute store result score @s soulscraftGui run data get entity @s Items[14].Slot
 execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 14 run clear @p sugar[custom_data={IsGuiItem:1}]
-execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 14 run execute as @p run function soulscraft:bonfire/bonfire_addons/levelups/levelup_faith
+execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 14 run execute as @p[tag=sc.bonfire_user] run function soulscraft:bonfire/bonfire_addons/levelups/levelup_faith
 execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 14 run tag @s add soulscraftUsed
 scoreboard players reset @s soulscraftGui
 
@@ -70,7 +70,7 @@ scoreboard players reset @s soulscraftGui
 # item 4 on slot 16 || Intelligence
 execute store result score @s soulscraftGui run data get entity @s Items[16].Slot
 execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 16 run clear @p sugar[custom_data={IsGuiItem:1}]
-execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 16 run execute as @p run function soulscraft:bonfire/bonfire_addons/levelups/levelup_int
+execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 16 run execute as @p[tag=sc.bonfire_user] run function soulscraft:bonfire/bonfire_addons/levelups/levelup_int
 execute if entity @s[tag=!soulscraftUsed] unless score @s soulscraftGui matches 16 run tag @s add soulscraftUsed
 scoreboard players reset @s soulscraftGui
 

@@ -1,4 +1,6 @@
 # Custom Player Data
+## sc.bonfire_user
+Tagged player is currently using or was shortly using a bonfire close to him
 
 # Custom Item Data
 ## sc.fast_charge:true
